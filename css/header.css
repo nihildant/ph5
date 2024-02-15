@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #eee;
+}
+header .wrap {
+  height: 88px;
+  align-items: center;
+}
+header .wrap h1 {
+  
+}
+header .wrap .menu {
+  
+  align-items: center;
+}
+header .wrap .menu span{
+  
+}
+header .wrap .menu span a{
+  
+}
+header .wrap .menu ul.lj {
+  
+}
+header .wrap .menu ul.lj li {
+  
+}
+header .wrap .menu ul.lj li a {
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+}
+header .wrap a.cart{
+  line-height: 20px;
+  padding: 0 10px;
+  font-size: 0;
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/shopping.svg);
+}
+header .wrap a.ham{
+  line-height: 20px;
+  padding: 0 10px;
+  font-size: 0;
+  height: 30px;
+  width: 30px;
+  background-image: url(../img/ham.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

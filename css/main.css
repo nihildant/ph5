@@ -1,0 +1,257 @@
+main {
+  
+}
+
+section#inside {
+  
+}
+section#inside .wrap {
+  
+}
+section#inside .wrap h2 {
+  text-align: center;
+  color: #404228;
+  line-height: 4;
+}
+section#inside .wrap >div {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+section#inside .wrap div img:nth-of-type(1) {
+  grid-column: 1 / span 2;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 100vh;
+}
+section#inside .wrap div img:nth-of-type(2) {
+  width: 800px;
+}
+section#inside .wrap div p {
+}
+section#inside .wrap div .inside {
+  
+}
+section#inside .wrap div .inside p{
+  
+  margin: 40px 40px 0 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section#hanoks {
+  
+}
+section#hanoks .wrap {
+  
+}
+section#hanoks .wrap h2 {
+  line-height: 4;
+}
+section#hanoks .wrap ul {
+  
+}
+section#hanoks .wrap ul li {
+  
+}
+section#hanoks .wrap ul li div {
+}
+section#hanoks .wrap ul li div a {
+
+}
+section#hanoks .wrap ul li div.hanok1 >a{
+  
+}
+section#hanoks .wrap ul li div a.reservation{
+  grid-column: 3;
+}
+section#hanoks .wrap ul li div a.tour{
+  
+  grid-column: 4;
+}
+section#hanoks .wrap ul li div img {
+  width: 900px;
+}
+section#hanoks .wrap ul li div.hanok1{
+  
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+section#hanoks .wrap ul li div.hanok1 a:nth-child(1){
+  
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column: 2 / span 3;
+}
+section#hanoks .wrap ul li div.hanok1 a span{
+  
+}
+section#hanoks .wrap ul li div.hanok1 img{
+  
+  grid-column: 5;
+  grid-row: 1 /span 2;
+}
+section#hanoks .wrap ul li div.hanok2{
+  
+}
+section#hanoks .wrap ul li div.hanok2 a{
+  
+}
+section#hanoks .wrap ul li div.hanok2 a span{
+  
+}
+section#hanoks .wrap ul li div.hanok2 img{
+  
+}
+section#hanoks .wrap ul li div.hanok3{
+  
+}
+section#hanoks .wrap ul li div.hanok3 a{
+  
+}
+section#hanoks .wrap ul li div.hanok3 a span{
+  
+}
+section#hanoks .wrap ul li div.hanok3 img{
+  
+}
+section#hanoks .wrap ul li div.hanok4{
+  
+}
+section#hanoks .wrap ul li div.hanok4 a{
+  
+}
+section#hanoks .wrap ul li div.hanok4 a span{
+  
+}
+section#hanoks .wrap ul li div.hanok4 img{
+  
+}
+section#hanoks .wrap ul li div.hanok5{
+  
+}
+section#hanoks .wrap ul li div.hanok5 a{
+  
+}
+section#hanoks .wrap ul li div.hanok5 a span{
+  
+}
+section#hanoks .wrap ul li div.hanok5 img{
+  
+}
+section#hanoks .wrap ul li div a h3 {
+  
+}
+section#hanoks .wrap ul li div a h3 span {
+  
+}
+section#hanoks .wrap ul li div a p {
+  
+  border-left: 1px solid black;
+  grid-column: 3 /span 4;
+}
+section#hanoks .wrap ul li div a a {
+  
+}
+section#hanoks .wrap ul li div a img {
+  
+}
+
+section#offerings {
+  
+}
+section#offerings .wrap {
+  
+}
+section#offerings .wrap h2 {
+  
+}
+section#offerings .wrap ul {
+  
+}
+section#offerings .wrap ul li {
+  
+}
+section#offerings .wrap ul li img {
+  
+}
+section#offerings .wrap ul li a {
+  
+}
+section#offerings .wrap ul li p {
+  
+}
+
+section#discovery {
+  
+  height: 100vh;
+}
+section#discovery .wrap {
+  background-image: url(../img/hs.jpg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+section#discovery .wrap h2 {
+  
+}
+section#discovery .wrap h3 {
+  
+}
+section#discovery .wrap p {
+  
+}
+section#discovery .wrap a {
+  
+}
+
+section#shop {
+  
+}
+section#shop .wrap {
+  
+}
+section#shop .wrap h2 {
+  
+}
+section#shop .wrap ul{ 
+  display: flex;
+}
+section#shop .wrap ul li {
+  flex-wrap: wrap;
+  display: flex;
+}
+section#shop .wrap ul li img {
+  width: 360px;
+}
+section#shop .wrap ul li span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+section#shop .wrap ul li a {
+  
+}
+section#contactus {
+  
+}
+section#contactus .wrap {
+  
+}
+section#contactus .wrap h2 {
+  
+}
+section#contactus .wrap ul {
+  
+}
+section#contactus .wrap ul li {
+  
+}
+section#contactus .wrap ul li a {
+  
+}
