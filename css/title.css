@@ -1,11 +1,13 @@
 #title {
-  background-image: url(../img/snapshot.jpg);
-  color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 #title .wrap {
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: end;
+  color: white;
 }
 #title .wrap h2 {
   display: flex;
@@ -19,7 +21,11 @@
   width: calc(100% - 70px);
   margin-bottom: 3%;
 }
-#title .wrap a {
+#title .wrap .inline-YTPlayer{
+  
+}
+
+#title .wrap a.Reservation {
   display: flex;
   height: 140px;
   width: 140px;
@@ -31,9 +37,61 @@
   bottom: 55px;
   right: 40px;
   color: white;
+  z-index: 1;
 }
-#title .wrap a:hover{
+#title .wrap a.Reservation:hover{
   color: #717546;
   background-color: white;
   border: solid 1px #717546;
+}
+
+#title .wrap div.sideMenu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 500px;
+  background-color: rgba(32,32,21);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 10% 1fr 20% auto;
+  padding: 90px;
+  transform: translateX(500px);
+  display: none;
+}
+.slideM{
+  transform: translateX(0px) !important;
+}
+
+#title .wrap div.sideMenu ul.sMenu{
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start;
+}
+#title .wrap div.sideMenu ul.sMenu li{
+
+}
+#title .wrap div.sideMenu ul.sMenu li a{
+  color: white;
+  font-size: 30px;
+}
+#title .wrap div.sideMenu ul.sMenu li a span{
+
+}
+#title .wrap div.sideMenu ul.sContact{
+  grid-row: 4;
+  display: flex;
+  flex-direction: column;
+}
+#title .wrap div.sideMenu ul.sContact li{
+
+}
+#title .wrap div.sideMenu ul.sContact li a{
+  color: rgba(255,255,255,0.7);
+}
+#title .wrap div.sideMenu ul.sContact li a span{
+  line-height: 2;
 }

@@ -1,9 +1,10 @@
 main {
-  
+  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 section#inside {
-  
+
 }
 section#inside .wrap {
   
@@ -16,13 +17,12 @@ section#inside .wrap h2 {
 section#inside .wrap >div {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 section#inside .wrap div img:nth-of-type(1) {
   grid-column: 1 / span 2;
   box-sizing: border-box;
-  width: 1000px;
-  height: 100vh;
+  width: -moz-available;
 }
 section#inside .wrap div img:nth-of-type(2) {
   width: 800px;
@@ -52,48 +52,67 @@ section#hanoks .wrap ul {
   
 }
 section#hanoks .wrap ul li {
-  
+  margin-bottom: 30px;
 }
-section#hanoks .wrap ul li div {
+section#hanoks .wrap ul li >div {
+  display: grid;
+  grid-template-columns: 250px auto auto;
+  grid-template-rows: auto auto;
+  padding: 25px;
+  background-color: #f7f7f7;
+}
+section#hanoks .wrap ul li div h3 {
+  border-right: 1px solid;
 }
 section#hanoks .wrap ul li div a {
 
 }
-section#hanoks .wrap ul li div.hanok1 >a{
-  
+section#hanoks .wrap ul li div .hText {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
-section#hanoks .wrap ul li div a.reservation{
-  grid-column: 3;
+section#hanoks .wrap ul li div .hText p{
+  margin-bottom: 30px;
 }
-section#hanoks .wrap ul li div a.tour{
-  
-  grid-column: 4;
+section#hanoks .wrap ul li div .hText .hLink{
+  display: flex;
+  justify-content: center;
+}
+section#hanoks .wrap ul li div .hLink a{
+  padding: 13px 20px;
+}
+section#hanoks .wrap ul li div .hLink .reservation{
+  border: 1px solid;
+  border-radius: 30px;
+}
+section#hanoks .wrap ul li div .hLink .tour{
+
 }
 section#hanoks .wrap ul li div img {
-  width: 900px;
+  width: 100%;
 }
 section#hanoks .wrap ul li div.hanok1{
-  
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto;
+
 }
-section#hanoks .wrap ul li div.hanok1 a:nth-child(1){
-  
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column: 2 / span 3;
+section#hanoks .wrap ul li div.hanok1 h3{
+
 }
+section#hanoks .wrap ul li div.hanok1 >div {
+  
+}
+section#hanoks .wrap ul li div.hanok1 div p{
+  
+}
+
 section#hanoks .wrap ul li div.hanok1 a span{
   
 }
 section#hanoks .wrap ul li div.hanok1 img{
   
-  grid-column: 5;
-  grid-row: 1 /span 2;
 }
 section#hanoks .wrap ul li div.hanok2{
-  
+
 }
 section#hanoks .wrap ul li div.hanok2 a{
   
@@ -140,15 +159,14 @@ section#hanoks .wrap ul li div.hanok5 a span{
 section#hanoks .wrap ul li div.hanok5 img{
   
 }
-section#hanoks .wrap ul li div a h3 {
-  
+section#hanoks .wrap ul li div a >h3 {
+  grid-row: 1 / span 2;
+  border-right: 1px solid black;
 }
 section#hanoks .wrap ul li div a h3 span {
   
 }
 section#hanoks .wrap ul li div a p {
-  
-  border-left: 1px solid black;
   grid-column: 3 /span 4;
 }
 section#hanoks .wrap ul li div a a {
@@ -159,22 +177,27 @@ section#hanoks .wrap ul li div a img {
 }
 
 section#offerings {
-  
+  height: 100vh;
 }
 section#offerings .wrap {
-  
+  display: flex;
 }
 section#offerings .wrap h2 {
-  
+  writing-mode: sideways-lr;
+  text-align: end;
+  margin-right: 20px;
 }
 section#offerings .wrap ul {
   
+  display: flex;
 }
 section#offerings .wrap ul li {
   
 }
 section#offerings .wrap ul li img {
-  
+  width: 302px;
+/*  슬라이드 적용 전 임시  */
+  height: 100%;
 }
 section#offerings .wrap ul li a {
   
@@ -242,6 +265,8 @@ section#contactus {
 }
 section#contactus .wrap {
   
+  display: grid;
+  grid-template-columns: 10% auto 10%;
 }
 section#contactus .wrap h2 {
   
@@ -253,5 +278,44 @@ section#contactus .wrap ul li {
   
 }
 section#contactus .wrap ul li a {
-  
+
+}
+
+section#contactus .wrap ul.adress {
+
+}
+
+section#contactus .wrap ul.adress li{
+
+}
+section#contactus .wrap ul.adress a{
+
+}
+
+section#contactus .wrap ul.cLink {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#contactus .wrap ul.cLink li{
+  width: 50px;
+  height: 50px;
+}
+section#contactus .wrap ul.cLink li a{
+  font-size: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section#contactus .wrap ul.cLink li:nth-child(1) a{
+  background-image: url(../img/cLink1.png);
+}
+section#contactus .wrap ul.cLink li:nth-child(2) a{
+  background-image: url(../img/cLink2.png);
+}
+section#contactus .wrap ul.cLink li:nth-child(3) a{
+  background-image: url(../img/cLink3.png);
+  background-color: #ccc;
 }
