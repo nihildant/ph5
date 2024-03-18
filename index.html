@@ -38,6 +38,16 @@
                return false;
             });
 
+            //한옥 slide
+            // var nextP;
+            // $("section#hanoks .wrap ul li").click(function(){
+            //    $(this).next().slideToggle();
+            //    nextP=$(this).next();
+            //    $("p").not(nextP).slideUp();
+            // });
+            $("section#hanoks .wrap ul li").click(function(){
+               $(this).toggleClass("textUp");
+            });
          }
       );
    </script>
@@ -259,71 +269,82 @@
             <h3 class="h3">한강 치맥 & 서울 나이트 드라이버 투어</h2>
             <p>노스텔지어에서 제공하는 Hangang Chimaek & Seoul Night Drive Tour는 외국 관광객들이 서울의 아름다운 한강과 도심을 즐기는 특별한 경험을 제공합니다. 서울의 대표적인 액티비티인 "한강치맥"과 한강의 아름다운 강변 야경을 승용차를 이용하여 둘러보는 드라이빙 투어가 결합되어 차별화된 서울 투어를 즐길 수 있습니다.
             </p>
-            <a href=""></a>
+            <a href="">Reservation</a>
          </div>
       </section>
       <!-- 샵 -->
       <section id="shop">
          <div class="wrap">
             <h2 class="h2">Shop</h2>
+            <a href="">see more</a>
             <ul>
                <li>
                   <a href=""><img src="img/s1.jpg" alt=""></a>
                   <span>
-                  <a href="">코튼 파우치</a>
-                  <a href="">KRW 11,000</a>
+                     <a href="">코튼 파우치</a>
+                     <a href="">KRW 11,000</a>
                   </span>
                </li>
                <li>
                   <a href=""><img src="img/s2.jpg" alt=""></a>
-                  <a href="">트래블 키트</a>
-                  <a href="">KRW 18,400</a>
+                  <span>
+                     <a href="">트래블 키트</a>
+                     <a href="">KRW 18,400</a>
+                  </span>
                </li>
                <li>
                   <a href=""><img src="img/s3.jpg" alt=""></a>
-                  <a href="">배스로브</a>
-                  <a href="">KRW 150,000</a>
+                  <span>
+                     <a href="">배스로브</a>
+                     <a href="">KRW 150,000</a>
+                  </span>
                </li>
                <li>
                   <a href=""><img src="img/s4.jpg" alt=""></a>
-                  <a href="">페이스 타월 (GB)</a>
-                  <a href="">KRW 9,000</a>
+                  <span>
+                     <a href="">페이스 타월 (GB)</a>
+                     <a href="">KRW 9,000</a>
+                  </span>
                </li>
             </ul>
-            <a href="">see more</a>
+
          </div>
       </section>
       <section id="contactus">
          <div class="wrap">
-            <h2>Contact Us</h2>
-            <ul class="adress">
-               <li><a href="">+82-2-3673-3666</a></li>
-               <li><a href="">master@nostalgiaseoul.com</a></li>
-            </ul>
-            <ul class="cLink">
-               <li><a href="">instagram</a></li>
-               <li><a href="">youtube</a></li>
-               <li><a href="">onecafe.instagram</a></li>
-            </ul>
+            <h2 class="h5">Contact Us</h2>
+            <div class="contactT">
+               <ul class="adress">
+                  <li><a href="">+82-2-3673-3666</a></li>
+                  <li><a href="">master@nostalgiaseoul.com</a></li>
+               </ul>
+               <ul class="cLink">
+                  <li><a href="">instagram</a></li>
+                  <li><a href="">youtube</a></li>
+                  <li><a href="">onecafe.instagram</a></li>
+               </ul>
+            </div>
+            <div class="contactB">
+               <ul>
+                  <li><a href="">Membership</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+               </ul>
+               <ul>
+                  <li><span>통신판매업 신고</span>제 2022-서울종로-1394 호 [사업자정보확인]</li>
+                  <li><span>사업자등록번호</span>879-81-02553</li>
+               </ul>
+            </div>
          </div>
       </section>
    </div>
 </body>
 <footer>
    <div class="wrap">
-      <ul>
-         <li><a href="">Membership</a></li>
-         <li><a href="">Privacy Policy</a></li>
-         <li><a href="">Terms & Conditions</a></li>
-      </ul>
-      <ul>
-         <li><span>통신판매업 신고</span>제 2022-서울종로-1394 호 [사업자정보확인]</li>
-         <li><span>사업자등록번호</span>879-81-02553</li>
-      </ul>
       <h2>nostalgia</h2>
       <p>Nostalgia Inc. CEO Park Hyeon Gu</p>
       <p>1, Bukchon-ro 8-gil, Jongno-gu, Seoul, Republic of Korea</p>
-      <p>Copyright 2023, Nostalgia Inc.</p>
+      <p class="copyright">Copyright 2023, Nostalgia Inc.</p>
    </div>
 </footer>
 </html>

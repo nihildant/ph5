@@ -218,22 +218,30 @@ section#discovery .wrap {
   height: 100%;
   justify-content: center;
   background-repeat: no-repeat;
+  padding-left: 40%;
 }
 section#discovery .wrap h2 {
   
+  line-height: 2;
 }
 section#discovery .wrap h3 {
   
+  line-height: 2;
 }
 section#discovery .wrap p {
   
+  line-height: 2;
 }
 section#discovery .wrap a {
   
+  color: white;
+  border: 1px solid;
+  display: flex;
+  justify-content: end;
 }
 
 section#shop {
-  
+  height: 100vh;
 }
 section#shop .wrap {
   
@@ -244,12 +252,21 @@ section#shop .wrap h2 {
 section#shop .wrap ul{ 
   display: flex;
 }
+section#shop .wrap >a{ 
+  display: flex;
+  justify-content: end;
+}
+section#shop .wrap >a:after{
+  content: "";
+}
 section#shop .wrap ul li {
   flex-wrap: wrap;
   display: flex;
+  padding: 0 10px;
 }
 section#shop .wrap ul li img {
-  width: 360px;
+  width: 100%;
+  height: 100%;
 }
 section#shop .wrap ul li span {
   display: flex;
@@ -264,12 +281,25 @@ section#contactus {
   
 }
 section#contactus .wrap {
-  
   display: grid;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 15% auto auto;
+  grid-template-rows: auto auto;
 }
 section#contactus .wrap h2 {
   
+}
+section#contactus .wrap .contactT {
+  
+  grid-column: 2 / span 2;
+  display: flex;
+  justify-content: space-between;
+}
+section#contactus .wrap .contactB {
+  
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: space-between;
 }
 section#contactus .wrap ul {
   
@@ -294,12 +324,12 @@ section#contactus .wrap ul.adress a{
 
 section#contactus .wrap ul.cLink {
   display: flex;
-  justify-content: space-between;
 }
 
 section#contactus .wrap ul.cLink li{
   width: 50px;
   height: 50px;
+  padding: 10px;
 }
 section#contactus .wrap ul.cLink li a{
   font-size: 0;
