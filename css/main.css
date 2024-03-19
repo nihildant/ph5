@@ -56,10 +56,13 @@ section#hanoks .wrap ul li {
 }
 section#hanoks .wrap ul li >div {
   display: grid;
-  grid-template-columns: 250px auto auto;
+  grid-template-columns: 250px 50% 30%;
   grid-template-rows: auto auto;
   padding: 25px;
   background-color: #f7f7f7;
+  height: 200px;
+  overflow: hidden;
+  transition: 0.7s;
 }
 section#hanoks .wrap ul li div h3 {
   border-right: 1px solid;
@@ -71,6 +74,15 @@ section#hanoks .wrap ul li div .hText {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+}
+section#hanoks .wrap ul li div .hText .hTextin{
+  width: 70%;
+}
+
+section#hanoks .wrap ul li div .hText h4{
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 section#hanoks .wrap ul li div .hText p{
   margin-bottom: 30px;
@@ -94,6 +106,9 @@ section#hanoks .wrap ul li div img {
 }
 section#hanoks .wrap ul li div.hanok1{
 
+}
+.height{
+  height: auto !important;
 }
 section#hanoks .wrap ul li div.hanok1 h3{
 
@@ -213,31 +228,29 @@ section#discovery {
 section#discovery .wrap {
   background-image: url(../img/hs.jpg);
   color: white;
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  justify-content: center;
   background-repeat: no-repeat;
   padding-left: 40%;
+  padding-top: 100px;
 }
 section#discovery .wrap h2 {
   
   line-height: 2;
 }
 section#discovery .wrap h3 {
-  
   line-height: 2;
 }
 section#discovery .wrap p {
-  
   line-height: 2;
 }
 section#discovery .wrap a {
-  
   color: white;
   border: 1px solid;
-  display: flex;
-  justify-content: end;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
 }
 
 section#shop {
@@ -289,20 +302,41 @@ section#contactus .wrap h2 {
   
 }
 section#contactus .wrap .contactT {
-  
   grid-column: 2 / span 2;
   display: flex;
   justify-content: space-between;
 }
 section#contactus .wrap .contactB {
-  
   grid-row: 2;
   grid-column: 1 / span 3;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid;
+  padding: 20px 0;
 }
+
 section#contactus .wrap ul {
   
+}
+section#contactus .wrap ul.Policy{
+  display: flex;
+}
+section#contactus .wrap ul.Policy li{
+  padding: 10px 10px 10px 0;
+}
+
+section#contactus .wrap ul.Policy a{
+  
+}
+section#contactus .wrap ul.num{
+  
+}
+section#contactus .wrap ul.num li {
+  line-height: 2;
+}
+section#contactus .wrap ul.num li span{
+  
+  margin-right: 20px;
 }
 section#contactus .wrap ul li {
   

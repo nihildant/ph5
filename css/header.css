@@ -8,6 +8,7 @@ header {
 header .wrap {
   height: 88px;
   align-items: center;
+  max-width: 1600px;
 }
 header .wrap h1 {
   font-size: 0;
@@ -64,10 +65,10 @@ header .wrap a.ham span{
   background-color: white;
 }
 
-header .wrap a.ham.x{
+/* header .wrap a.ham.x{
   position: absolute;
   right: 30px;
   top: 20px;
   z-index: 1;
   background-color: white;
-}
+} */

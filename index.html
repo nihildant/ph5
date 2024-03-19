@@ -33,20 +33,20 @@
       $(document).ready(
          function(){
             $("header .wrap a.ham").click(function(){
-               $(this).toggleClass("x")
-               $("#title .wrap div.sideMenu").toggleClass("slideM");
+               $("#title .wrap div.sideMenu").addClass("slideM");
+               return false;
+            });
+            $("#title .wrap div.sideMenu a.x").click(function(){
+               $("#title .wrap div.sideMenu").removeClass("slideM");
                return false;
             });
 
-            //한옥 slide
-            // var nextP;
-            // $("section#hanoks .wrap ul li").click(function(){
-            //    $(this).next().slideToggle();
-            //    nextP=$(this).next();
-            //    $("p").not(nextP).slideUp();
-            // });
+            // 한옥 slide
+            $("section#hanoks .wrap ul li div .hText .hTextin").hide();
             $("section#hanoks .wrap ul li").click(function(){
-               $(this).toggleClass("textUp");
+               $(this).find("h4").toggle();
+               $(this).find(".hTextin").toggle();
+               $(this).children("div").toggleClass("height");
             });
          }
       );
@@ -62,7 +62,7 @@
    </style>
    <script>
       jQuery( function() { //$는 jQuery 단축표기, $(document).ready(function(){})에서 $(document).ready...를 단축표기해서 $(function(){})
-            jQuery( '#background' ).YTPlayer();
+         jQuery( '#background' ).YTPlayer();
       });
    </script>
 </head>
@@ -72,10 +72,10 @@
       <div class="wrap flex between">
          <h1>노스텔지어</h1>
          <div class="menu flex">
-            <span class="lang">
-               <a href="">KR</a>
-               <a href="">EN</a>
-            </span>
+            <select name="" id="lang">
+               <option value="">KR</option>
+               <option value="">EN</option>
+            </select>
             <ul class="lj flex">
                <li><a href="">login</a></li>
                <li><a href="">join</a></li>
@@ -127,6 +127,10 @@
                   <li><a href=""><span>Contact Number</span><span>+82-2-3673-3666</span></a></li>
                   <li><a href=""><span>Rental Inquiries</span><span>master@nostalgiaseoul.com</span></a></li>
                </ul>
+               <a href="" class="x">
+                  <span></span>
+                  <span></span>
+               </a>
             </div>
             <a class="Reservation" chref="">Reservation</a>
          </div>
@@ -157,12 +161,15 @@
                   <div class="hanok1">
                      <h3 class="h3">블루재<br>(Blue齋)</h3>
                      <div class="hText">
-                        <p class="p">12세기부터 청색은 아름답고 우아하며 귀족적이고 신성한 색으로 여겨져 왔습니다. 북촌 한옥마을, 그 중 으뜸이라 할 수 있는 가회동 31번지 초입에 청기와를 두른 고귀한 한옥 블루재가 있습니다.</p>
-                        <p class="p">가회동 지역을 통틀어서 한옥의 보존 상태가 가장 우수하다고 평가받은 한옥이며 대지 100평이상 되는 대형 한옥 호텔입니다.</p>
-                        <p class="p">1900년대 초기에 제작된 것으로 평가받는 현관 출입문과 거실의 우물 천정 그리고 각 방마다 걸려있는 서화들이 원형 그대로 잘 보존되어 있는 한옥입니다. 남산타워를 남향으로 조망할 수 있는 풍광이 특히 아름다운 블루재에서 압도적인 품격과 고귀함을 느껴보시기 바랍니다.</p>
-                        <div class="hLink">
-                           <a class="reservation" href="">reservation</a>
-                           <a class="tour" href="">hanok Tour</a>
+                        <h4>북촌 한옥마을에 자리잡은 고귀한 푸른 한옥</h4>
+                        <div class="hTextin">
+                           <p class="p">12세기부터 청색은 아름답고 우아하며 귀족적이고 신성한 색으로 여겨져 왔습니다. 북촌 한옥마을, 그 중 으뜸이라 할 수 있는 가회동 31번지 초입에 청기와를 두른 고귀한 한옥 블루재가 있습니다.</p>
+                           <p class="p">가회동 지역을 통틀어서 한옥의 보존 상태가 가장 우수하다고 평가받은 한옥이며 대지 100평이상 되는 대형 한옥 호텔입니다.</p>
+                           <p class="p">1900년대 초기에 제작된 것으로 평가받는 현관 출입문과 거실의 우물 천정 그리고 각 방마다 걸려있는 서화들이 원형 그대로 잘 보존되어 있는 한옥입니다. 남산타워를 남향으로 조망할 수 있는 풍광이 특히 아름다운 블루재에서 압도적인 품격과 고귀함을 느껴보시기 바랍니다.</p>
+                           <div class="hLink">
+                              <a class="reservation" href="">reservation</a>
+                              <a class="tour" href="">hanok Tour</a>
+                           </div>
                         </div>
                      </div>
                      <img src="img/h1.jpg" alt="">
@@ -325,12 +332,12 @@
                </ul>
             </div>
             <div class="contactB">
-               <ul>
+               <ul class="Policy">
                   <li><a href="">Membership</a></li>
                   <li><a href="">Privacy Policy</a></li>
                   <li><a href="">Terms & Conditions</a></li>
                </ul>
-               <ul>
+               <ul class="num">
                   <li><span>통신판매업 신고</span>제 2022-서울종로-1394 호 [사업자정보확인]</li>
                   <li><span>사업자등록번호</span>879-81-02553</li>
                </ul>
