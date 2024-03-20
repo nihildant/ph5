@@ -59,6 +59,7 @@
   padding: 90px;
   transform: translateX(500px);
   z-index: 2;
+  transition: 1s;
 }
 .slideM{
   transform: translateX(0px) !important;
@@ -81,9 +82,20 @@
 
 #title .wrap div.sideMenu a.x::before{
   content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  rotate: 45deg;
 }
 #title .wrap div.sideMenu a.x::after{
   content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  rotate: -45deg;
+  transform: translateY(-1px);
 }
 
 /* #title .wrap div.sideMenu a.x span{
