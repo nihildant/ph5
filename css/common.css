@@ -2,7 +2,7 @@ body{
   background-color: #f5f5f5;
 }
 .wrap{
-  width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 /* 패딩 */

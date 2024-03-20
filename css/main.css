@@ -17,12 +17,12 @@ section#inside .wrap h2 {
 section#inside .wrap >div {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 section#inside .wrap div img:nth-of-type(1) {
   grid-column: 1 / span 2;
   box-sizing: border-box;
-  width: -moz-available;
+  width: 100%;
 }
 section#inside .wrap div img:nth-of-type(2) {
   width: 800px;
